@@ -16,11 +16,11 @@ public class FlorServiceImpl implements FlorService{
     private FlorRepository florRepository;
 
     private FlorDTO convertEntityToDTO(FlorEntity florEntity) {
-        FlorDTO sucursalDTO = new FlorDTO();
-        sucursalDTO.setPk_FlorID((int) florEntity.getPk_FlorID());
-        sucursalDTO.setNomFlor(florEntity.getNomFlor());
-        sucursalDTO.setPaisFlor(florEntity.getPaisFlor());
-        return sucursalDTO;
+        FlorDTO florDTO = new FlorDTO();
+        florDTO.setPk_FlorID((int) florEntity.getPk_FlorID());
+        florDTO.setNomFlor(florEntity.getNomFlor());
+        florDTO.setPaisFlor(florEntity.getPaisFlor());
+        return florDTO;
     }
 
     @Override

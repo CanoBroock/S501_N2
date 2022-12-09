@@ -12,7 +12,6 @@ import java.util.List;
 @Getter
 @Setter
 @ToString
-@Data
 public class FlorDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -26,7 +25,7 @@ public class FlorDTO implements Serializable {
     private String paisFlor;
     private String tipoFlor;
 
-    public void setTipoFlor (String paisFlor) {
+    public void setTipoFlor(String paisFlor) {
         this.paisFlor = paisFlor;
         florUE();
     }

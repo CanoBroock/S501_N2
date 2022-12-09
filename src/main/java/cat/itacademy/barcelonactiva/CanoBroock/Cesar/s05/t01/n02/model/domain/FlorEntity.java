@@ -13,7 +13,7 @@ import lombok.*;
 @Table(name = "flores")
 public class FlorEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long pk_FlorID;
 
     @Column(name = "nombre_flor")
@@ -21,4 +21,9 @@ public class FlorEntity {
 
     @Column(name = "pais_flor")
     private String paisFlor;
+
+    public FlorEntity(String nomFlor, String paisFlor) {
+        this.nomFlor = nomFlor;
+        this.paisFlor = paisFlor;
+    }
 }

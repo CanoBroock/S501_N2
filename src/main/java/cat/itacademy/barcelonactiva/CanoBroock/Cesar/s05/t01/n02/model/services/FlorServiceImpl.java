@@ -20,6 +20,7 @@ public class FlorServiceImpl implements FlorService{
         florDTO.setPk_FlorID((int) florEntity.getPk_FlorID());
         florDTO.setNomFlor(florEntity.getNomFlor());
         florDTO.setPaisFlor(florEntity.getPaisFlor());
+        florDTO.setTipoFlor(florEntity.getPaisFlor());
         return florDTO;
     }
 

@@ -67,7 +67,7 @@ public class FlorController {
     }
 
     @GetMapping("/getAll")
-    public ResponseEntity<List<FlorDTO>> getAllFlores() {
+    public ResponseEntity<?> getAllFlores() {
         try {
             List<FlorDTO> floresDTO = florServiceImpl.getAllFlores();
             if (floresDTO.isEmpty()) {

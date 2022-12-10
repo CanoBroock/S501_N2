@@ -27,10 +27,10 @@ public class FlorDTO implements Serializable {
 
     public void setTipoFlor(String paisFlor) {
         this.paisFlor = paisFlor;
-        florUE();
+        florUE(paisFlor);
     }
 
-    public void florUE() {
+    public String florUE(String paisFlor) {
         boolean controlador = false;
         int i = 0;
 
@@ -44,6 +44,6 @@ public class FlorDTO implements Serializable {
         if (controlador == false) {
             tipoFlor = "Fuera de la UE";
         }
-        setTipoFlor(tipoFlor);
+        return tipoFlor;
     }
 }

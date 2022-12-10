@@ -26,7 +26,6 @@ public class FlorDTO implements Serializable {
     private String tipoFlor;
 
     public void setTipoFlor(String paisFlor) {
-        this.paisFlor = paisFlor;
         florUE(paisFlor);
     }
 
